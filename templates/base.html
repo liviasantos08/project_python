@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+  <head>
+    <title>Produtos e Entregas</title>
+  </head>
+<body>
+    <div id="content" class="container">
+       <h2>Crie e Visualize Produtos</h2>
+       <a href="{% url 'product-create' %}">Adicionar Produts</a>
+       <a href="{% url 'product-list' %}"> Lista de Produtos</a>
+       {% block content %}
+
+       {% endblock %}
+  
+    </div>
+</body>
+</html>
+
+
+

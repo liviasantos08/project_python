@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Crie Produtos</h1>
+    <form id="product-form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button id="button" type="submit">Salvar</button>
+    </form>
+    <a href="{% url 'product-list' %}">Voltar para lista de produtos</a>
+   
+{% endblock %}
+
